@@ -59,7 +59,11 @@ API는 사용자의 권한 요청이나, HTTPS(Hypertext Transfer Protocal Secur
 
 예를 들어, HTTPS를 사용하여 데이터를 암호화하고, CORS를 사용하여 다른 출처의 리소스에 대한 접근을 제한해야 한다.
 
+<br>
+
 ---
+
+<br>
 
 # Brower
 
