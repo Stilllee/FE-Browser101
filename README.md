@@ -6,3 +6,6 @@
 
 # Window Scrolling
 ![chrome_Y37eS0zYsi](https://github.com/Stilllee/FE-Browser101/assets/108785772/f8a98047-1c08-4241-ac85-2a4342394baa)
+
+# Window load
+![chrome_KcqP9cqndB](https://github.com/Stilllee/FE-Browser101/assets/108785772/f783986b-a17a-48d9-9972-421737479453)
