@@ -15,23 +15,39 @@
         background-color: #f7d488;
         margin-bottom: 4px;
         border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #121212;
+        font-size: 48px;
+        font-weight: bold;
       }
       .special {
         background-color: #63e6be;
       }
+      aside {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+      }
     </style>
   </head>
   <body>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div class="special"></div>
-    <div></div>
-    <div></div>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div class="special">8</div>
+    <div>9</div>
+    <div>10</div>
+    <aside>
+      <button class="scroll-by">Scroll by 100px(y)</button>
+      <button class="scroll-to">Scroll to 100px(y)</button>
+      <button class="scroll-into">Scroll into special</button>
+    </aside>
     <script>
       const special = document.querySelector(".special");
       special.addEventListener("click", (e) => {
@@ -39,6 +55,19 @@
         console.log(rect);
         console.log(`client: ${e.clientX}, ${e.clientY}`);
         console.log(`page: ${e.pageX}, ${e.pageY}`);
+      });
+
+      const scrollBy = document.querySelector(".scroll-by");
+      const scrollTo = document.querySelector(".scroll-to");
+      const scrollInto = document.querySelector(".scroll-into");
+      scrollBy.addEventListener("click", () => {
+        window.scrollBy({ top: 100, left: 0, behavior: "smooth" });
+      });
+      scrollTo.addEventListener("click", () => {
+        window.scrollTo(0, 100);
+      });
+      scrollInto.addEventListener("click", () => {
+        special.scrollIntoView();
       });
     </script>
   </body>
