@@ -66,20 +66,26 @@ API는 사용자의 권한 요청이나, HTTPS(Hypertext Transfer Protocal Secur
 ## Window Size
 
 #### `window.screen`
+![DOfuYlNA3U](https://github.com/Stilllee/FE-Browser101/assets/108785772/1b4b2a1f-ec57-494d-88f3-0013bd42ea17)
 
-모니터의 해상도, 화면 크기 등의 정보
+- 모니터의 해상도, 화면 크기 등의 정보
 
 #### `window.outer`
+![chrome_ecstMtWh9q](https://github.com/Stilllee/FE-Browser101/assets/108785772/b98be89a-f32e-4dea-baa5-357a176b90f2)
 
-브라우저 탭, 메뉴 바, 툴바 등을 포함한 전체 브라우저 창의 너비를 반환
+- 브라우저 탭, 메뉴 바, 툴바 등을 포함한 전체 브라우저 창의 너비를 반환
 
 #### `window.inner`
+![chrome_xKWtasjs31](https://github.com/Stilllee/FE-Browser101/assets/108785772/f2e44272-c49c-4ec8-83a4-b19bcd60d647)
 
-브라우저의 스크롤 바, 테두리 등을 제외한 웹 페이지가 표시되는 영역의 너비를 반환
+- 브라우저의 웹 페이지가 표시되는 영역의 너비를 반환
 
 #### `documentElement.clientWidth`
+![chrome_zDU6Ky0vMn](https://github.com/Stilllee/FE-Browser101/assets/108785772/a5864c0c-8398-455d-a408-3d3a131431a7)
 
-웹 페이지의 내용이 표시되는 영역의 너비를 반환하며, 이 값은 스크롤 바를 제외한 값이다.
+- 웹 페이지의 내용이 표시되는 영역의 너비를 반환하며, 이 값은 스크롤 바를 제외한 값이다.
+
+<br>
 
 ![chrome_O7uWEbDGS9](https://github.com/Stilllee/FE-Browser101/assets/108785772/f96f0fe5-fe9c-462e-9d74-5cd5f8f3beab)
 
@@ -105,9 +111,13 @@ API는 사용자의 권한 요청이나, HTTPS(Hypertext Transfer Protocal Secur
 
 ![chrome_5TtuNUvkIo](https://github.com/Stilllee/FE-Browser101/assets/108785772/5e7794d7-eb84-4dca-a064-81406f01f030)
 
+<br>
+
 ## Window Scrolling
 
 ![chrome_Y37eS0zYsi](https://github.com/Stilllee/FE-Browser101/assets/108785772/f8a98047-1c08-4241-ac85-2a4342394baa)
+
+<br>
 
 ## Window load
 
