@@ -2,8 +2,8 @@
 
 const CARROT_SIZE = 80;
 const CARROT_COUNT = 5;
-const BUG_COUNT = 5;
-const GAME_DURATION_SEC = 5;
+const BUG_COUNT = 10;
+const GAME_DURATION_SEC = CARROT_COUNT;
 
 const field = document.querySelector(".game__field");
 const fieldRect = field.getBoundingClientRect();
@@ -72,6 +72,7 @@ function showStopButton() {
   const icon = gameBtn.querySelector(".fa-solid");
   icon.classList.add("fa-stop");
   icon.classList.remove("fa-play");
+  gameBtn.style.visibility = `visible`;
 }
 
 function hideGameButton() {
@@ -135,6 +136,7 @@ function onFieldClick(event) {
     playSound(carrotSound);
     updateScoreBoard();
     if (score === CARROT_COUNT) {
+      stopGameTimer();
       finishGame(true);
     }
   } else if (target.matches(".bug")) {
