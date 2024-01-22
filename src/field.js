@@ -10,7 +10,7 @@ export default class Field {
     this.bugCount = bugCount;
     this.field = document.querySelector(".game__field");
     this.fieldRect = this.field.getBoundingClientRect();
-
+    this.onClick = this.onClick.bind(this);
     this.field.addEventListener("click", this.onClick);
   }
 
@@ -47,9 +47,9 @@ export default class Field {
     if (target.matches(".carrot")) {
       target.remove();
       sound.playCarrot();
-      this.onItemClick && this.onItemClick(".carrot");
+      this.onItemClick && this.onItemClick("carrot");
     } else if (target.matches(".bug")) {
-      this.onItemClick && this.onItemClick(".bug");
+      this.onItemClick && this.onItemClick("bug");
     }
   }
 }
